@@ -23,7 +23,7 @@ export class CardReceitaComponent {
   recipes: Receita[] = [
     {
       id: 1,
-      title: 'Como perarar uma moqueca de Camarão',
+      title: 'Como prepara uma moqueca de Camarão',
       date: 'Abril 3, 2025',
       image: 'imagesmenu/camarao.png',
       ingredients: [
@@ -51,7 +51,7 @@ export class CardReceitaComponent {
     },
     {
       id: 1,
-      title: 'Como fazer Franco com Pequi',
+      title: 'Como fazer Frango com Pequi',
       date: 'Maio 3, 2023',
       image: 'imagesmenu/frango-pequi.jpg',
       ingredients: [
