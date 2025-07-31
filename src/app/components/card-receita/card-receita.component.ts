@@ -178,6 +178,117 @@ export class CardReceitaComponent {
         'Servir com parmesão ralado por cima.'
       ]
     },
+
+    // NOVAS RECEITAS ADICIONADAS---------------------------------------------------------------------------
+    // ---------------------------------------------------------------------------- ----------------------- ----------
+    {
+      id: 18,
+      title: 'Filé de Peixe à Dorê',
+      date: 'Setembro 12, 2026',
+      image: 'images/filepeixe.jpg',
+      ingredients: [
+        '4 filés de merluza',
+        '1 limão (suco)',
+        '2 ovos batidos',
+        '1 xíc. farinha de trigo',
+        'Sal e pimenta a gosto',
+        'Óleo para fritar',
+        '1 col. (sopa) salsa picada'
+      ],
+      preparation: [
+        'Temperar os filés com suco de limão, sal e pimenta.',
+        'Passar na farinha, ovo e fritar em óleo quente até dourar.',
+        'Escorrer em papel toalha e salpicar salsa por cima.',
+        'Acompanhar arroz, purê de batatas e salada de folhas.'
+      ]
+    },
+    {
+      id: 17,
+      title: 'Bife à Rolê com Bacon e Queijo',
+      date: 'Agosto 5, 2026',
+      image: 'images/bifeRole.jpg',
+      ingredients: [
+        '4 bifes de alcatra (bem finos)',
+        '8 fatias de bacon',
+        '4 fatias de queijo prato',
+        '1 cebola em rodelas',
+        '2 tomates picados',
+        '1 xíc. caldo de carne',
+        'Sal e pimenta a gosto',
+        'Palitos de dente'
+      ],
+      preparation: [
+        'Temperar os bifes, colocar 2 fatias de bacon e 1 de queijo em cada, enrolar e prender com palitos.',
+        'Selar os rolinhos em uma panela, reservar.',
+        'Refogar cebola e tomate, adicionar o caldo de carne e os rolinhos.',
+        'Cozinhar em fogo baixo por 20 min com a panela tampada.',
+        'Servir com arroz e feijão tropeiro.'
+      ]
+    }, {
+      id: 14,
+      title: 'Frango à Parmegiana com Purê de Batatas',
+      date: 'Maio 10, 2026',
+      image: 'images/frango parnediana.jpg',
+      ingredients: [
+        '4 filés de frango empanados',
+        '2 xíc. molho de tomate caseiro',
+        '200g mussarela em fatias',
+        '50g queijo parmesão ralado',
+        '2 ovos batidos',
+        '1 xíc. farinha de rosca',
+        '1 col. (sopa) orégano',
+        'Sal e pimenta a gosto',
+        'Azeite para fritar'
+      ],
+      preparation: [
+        'Temperar os filés com sal e pimenta, passar na farinha, ovo e farinha de rosca.',
+        'Fritar em azeite quente até dourar (2 min cada lado) e escorrer em papel toalha.',
+        'Em uma assadeira, colocar um pouco de molho, dispor os filés, cobrir com mais molho e as fatias de mussarela.',
+        'Polvilhar parmesão e orégano, levar ao forno (200°C) por 10 min até gratinar.',
+        'Servir com purê de batatas e arroz branco.'
+      ]
+    }, {
+      id: 6,
+      title: 'Carne de Sol Cremosa',
+      date: 'Setembro 5, 2025',
+      image: 'images/carnedosol.jpg',
+      ingredients: [
+        '600g carne de sol dessalgada e desfiada',
+        '1 xíc. nata fresca',
+        '1 cebola em rodelas',
+        '2 tomates picados',
+        'Pimenta-de-cheiro a gosto',
+        'Cheiro-verde picado',
+        '2 col. (sopa) manteiga de garrafa'
+      ],
+      preparation: [
+        'Refogar cebola e tomate na manteiga até murchar.',
+        'Adicionar carne de sol e dourar levemente.',
+        'Colocar nata e cozinhar em fogo baixo por 10 min.',
+        'Finalizar com cheiro-verde e pimenta.',
+        'Acompanhar macaxeira cozida e queijo coalho grelhado.'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Acarajé Autêntico',
+      date: 'Julho 8, 2025',
+      image: 'images/acaraje.jpg',
+      ingredients: [
+        '2 xíc. feijão fradinho (de molho por 12h)',
+        '1 cebola grande',
+        'Sal a gosto',
+        '500ml azeite de dendê',
+        'Recheio: camarão seco, vatapá e caruru'
+      ],
+      preparation: [
+        'Bater feijão escorrido com cebola no processador até virar pasta.',
+        'Bater mais 15 min para aerar (textura fofa).',
+        'Fritar colheradas da massa em dendê bem quente até dourar.',
+        'Cortar ao meio e rechear com vatapá, caruru e camarão.',
+        'Servir com pimenta.'
+      ]
+    }
     // Adicione mais receitas aqui seguindo o mesmo padrão
   ];
 

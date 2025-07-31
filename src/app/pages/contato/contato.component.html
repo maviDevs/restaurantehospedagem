@@ -20,10 +20,64 @@
 
     <label>
       <input type="checkbox" [(ngModel)]="aceito" name="aceito" />
-      Aceito os <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>
+      Aceito as
+      <a href="#" (click)="abrirModalPolitica($event)">política de privacidade</a>
     </label><br /><br />
 
+    <!-- Modal Política de Privacidade -->
+    <div *ngIf="mostrarModalPolitica" class="modal-backdrop">
+      <div class="modal-content">
+        <h3>Política de Privacidade</h3>
+        <p>Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações fornecidas por você
+          ao utilizar nosso formulário de contato.</p>
+
+        <h4>1. Coleta de Informações</h4>
+        <p>Coletamos informações pessoais, como nome, e-mail, número de telefone e mensagem, quando você preenche nosso
+          formulário de contato.</p>
+
+        <h4>2. Uso das Informações</h4>
+        <p>Utilizamos as informações coletadas para:</p>
+        <ul>
+          <li>Entrar em contato com você em resposta à sua solicitação.</li>
+          <li>Melhorar nossos serviços e atendimento.</li>
+          <li>Manter registros internos sobre o seu contato.</li>
+        </ul>
+
+        <h4>3. Compartilhamento de Informações</h4>
+        <p>Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros sem o seu consentimento,
+          exceto quando necessário para cumprir obrigações legais.</p>
+
+        <h4>4. Segurança</h4>
+        <p>Adotamos medidas de segurança para proteger suas informações pessoais e evitar acesso não autorizado,
+          alteração ou divulgação.</p>
+
+        <h4>5. Cookies</h4>
+        <p>Nosso site pode utilizar cookies para melhorar sua experiência de navegação. Você pode desativar os cookies
+          nas configurações do seu navegador.</p>
+
+        <h4>6. Links para Sites de Terceiros</h4>
+        <p>Nosso site pode conter links para outros sites. Não nos responsabilizamos pelas práticas de privacidade de
+          sites de terceiros.</p>
+
+        <h4>7. Consentimento</h4>
+        <p>Ao utilizar nosso formulário, você concorda com a coleta e uso das informações conforme descrito nesta
+          Política de Privacidade.</p>
+
+        <h4>8. Alterações nesta Política</h4>
+        <p>Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que você revise esta página
+          regularmente para estar ciente de quaisquer alterações.</p>
+
+        <h4>9. Contato</h4>
+        <p>Se tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco pelo e-mail <a
+            href="mailto:seuemail@dominio.com">VitoriasBistro.com</a>.</p>
+
+        <button (click)="fecharModalPolitica()">Fechar</button>
+      </div>
+    </div>
+
     <button type="submit">Enviar</button>
+
+
   </form>
 
   <!-- Div com a mensagem -->
@@ -32,22 +86,25 @@
   </div>
 </div>
 
-<app-footer></app-footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 <app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

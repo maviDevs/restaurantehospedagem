@@ -42,27 +42,81 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal-content {
-  background: white;
-  max-width: 500px;
-  width: 90%;
-  padding: 16px;
-  border-radius: 8px;
-  overflow-y: auto;
+  background: #fff;
+  max-width: 600px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  position: relative;
   max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  margin-top: 0;
+  color: #8B0000; /* tom vinho escuro */
+}
+
+.modal-content h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #C1440E; /* laranja queimado / estilo site */
+}
+
+.modal-content ul, 
+.modal-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .close {
-  float: right;
-  font-size: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #8B0000; /* vinho escuro */
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.close:hover {
+  background-color: #C1440E; /* laranja queimado */
+  transform: scale(1.1);
 }
 
 /* RESPONSIVIDADE */

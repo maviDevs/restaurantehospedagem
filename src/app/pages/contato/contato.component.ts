@@ -39,4 +39,15 @@ export class ContatoComponent {
     this.mensagem = '';
     this.aceito = false;
   }
+
+  mostrarModalPolitica = false;
+
+abrirModalPolitica(event: Event) {
+  event.preventDefault(); // evita redirecionamento do link
+  this.mostrarModalPolitica = true;
+}
+
+fecharModalPolitica() {
+  this.mostrarModalPolitica = false;
+}
 }
